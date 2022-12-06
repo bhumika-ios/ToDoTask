@@ -40,4 +40,15 @@ class TaskManager: ObservableObject{
         tasks.remove(atOffsets: index)
         
     }
+    func remove(task: TaskModel) {
+      tasks.removeAll {
+        $0.id == task.id
+      }
+      DispatchQueue.global().async {
+        self.notificationManager.save(tasks: self.tasks)
+      }
+      if task.reminderEnabled {
+        NotificationManager.shared.removeScheduledNotification(task: task)
+      }
+    }
 }
