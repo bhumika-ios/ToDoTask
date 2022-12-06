@@ -12,7 +12,9 @@ struct CreateTask: View {
         Form{
             Section{
                 HStack{
-                    
+                    Text("Add Task")
+                        .font(.title)
+                        .padding()
                 }
             }
         }
