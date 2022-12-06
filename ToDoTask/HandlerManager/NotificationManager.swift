@@ -51,7 +51,7 @@ class NotificationManager: ObservableObject {
         if let taskData = taskData {
             content.userInfo = ["Task": taskData]
         }
-        //time related interval notification
+        //MARK: time related interval notification
         var trigger: UNNotificationTrigger?
         switch task.reminder.reminderType {
         case .time:
@@ -62,7 +62,7 @@ class NotificationManager: ObservableObject {
             }
             content.threadIdentifier =
               NotificationManagerConstants.timeBaseNotification
-            // calendar base notification
+            //MARK: calendar base notification
         case .calendar:
           if let date = task.reminder.date {
             trigger = UNCalendarNotificationTrigger(

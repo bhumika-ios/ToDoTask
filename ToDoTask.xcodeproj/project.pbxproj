@@ -16,6 +16,7 @@
 		ACBB56EB293F1CEB00E6E9B9 /* ReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB56EA293F1CEB00E6E9B9 /* ReminderView.swift */; };
 		ACBB56ED293F1E2100E6E9B9 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB56EC293F1E2100E6E9B9 /* TaskModel.swift */; };
 		ACBB56F0293F335700E6E9B9 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB56EF293F335700E6E9B9 /* NotificationManager.swift */; };
+		ACBB56F2293F3A1500E6E9B9 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB56F1293F3A1500E6E9B9 /* TaskManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		ACBB56EA293F1CEB00E6E9B9 /* ReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderView.swift; sourceTree = "<group>"; };
 		ACBB56EC293F1E2100E6E9B9 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
 		ACBB56EF293F335700E6E9B9 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		ACBB56F1293F3A1500E6E9B9 /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				ACBB56EF293F335700E6E9B9 /* NotificationManager.swift */,
+				ACBB56F1293F3A1500E6E9B9 /* TaskManager.swift */,
 			);
 			path = HandlerManager;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 			files = (
 				ACBB56ED293F1E2100E6E9B9 /* TaskModel.swift in Sources */,
 				ACBB56E7293F0F5100E6E9B9 /* HomeView.swift in Sources */,
+				ACBB56F2293F3A1500E6E9B9 /* TaskManager.swift in Sources */,
 				ACBB56EB293F1CEB00E6E9B9 /* ReminderView.swift in Sources */,
 				ACBB56D8293F0E0400E6E9B9 /* ContentView.swift in Sources */,
 				ACBB56F0293F335700E6E9B9 /* NotificationManager.swift in Sources */,
