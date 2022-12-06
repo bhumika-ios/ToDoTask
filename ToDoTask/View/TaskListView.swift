@@ -9,10 +9,20 @@ import SwiftUI
 
 struct TaskListView: View {
     @ObservedObject var navigationManager = TaskManager.shared
-    @State var showNotificationSettingsUI = false
+    @State var showNotification = false
 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            VStack{
+                HStack{
+                    Spacer()
+                    Text("Todo Task 📝")
+                      .font(.title)
+                    Spacer()
+                }
+            }
+        
+        }
     }
 }
 
