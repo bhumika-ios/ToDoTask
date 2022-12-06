@@ -17,7 +17,8 @@ struct ReminderView: View {
                 Text("Interval").tag(ReminderType.time)
                 Text("Date").tag(ReminderType.calender)
             }
-            
+            .pickerStyle(SegmentedPickerStyle())
+            .padding(.vertical)
         }
     }
 }
