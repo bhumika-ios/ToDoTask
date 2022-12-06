@@ -14,6 +14,7 @@
 		ACBB56E7293F0F5100E6E9B9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB56E6293F0F5100E6E9B9 /* HomeView.swift */; };
 		ACBB56E9293F18E400E6E9B9 /* CreateTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB56E8293F18E400E6E9B9 /* CreateTask.swift */; };
 		ACBB56EB293F1CEB00E6E9B9 /* ReminderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB56EA293F1CEB00E6E9B9 /* ReminderView.swift */; };
+		ACBB56ED293F1E2100E6E9B9 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB56EC293F1E2100E6E9B9 /* TaskModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		ACBB56E6293F0F5100E6E9B9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		ACBB56E8293F18E400E6E9B9 /* CreateTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTask.swift; sourceTree = "<group>"; };
 		ACBB56EA293F1CEB00E6E9B9 /* ReminderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderView.swift; sourceTree = "<group>"; };
+		ACBB56EC293F1E2100E6E9B9 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		ACBB56E3293F0E2A00E6E9B9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				ACBB56EC293F1E2100E6E9B9 /* TaskModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACBB56ED293F1E2100E6E9B9 /* TaskModel.swift in Sources */,
 				ACBB56E7293F0F5100E6E9B9 /* HomeView.swift in Sources */,
 				ACBB56EB293F1CEB00E6E9B9 /* ReminderView.swift in Sources */,
 				ACBB56D8293F0E0400E6E9B9 /* ContentView.swift in Sources */,

@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct ReminderView: View {
+    //define picker objject
+   // @Binding var selectedPicker:
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Picker("Notification Trigger"){
+                Text("Interval")
+                Text("Date")
+            }
+        }
     }
 }
 
