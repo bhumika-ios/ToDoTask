@@ -14,7 +14,8 @@ struct ReminderView: View {
     @Binding var timeDuration: Int
     //define date object
     @Binding var date: Date
-    
+    // defien repeate bool object
+    @Binding var onReapeat: Bool
     var body: some View {
         VStack{
             Picker("Notification Trigger", selection: $selectedPicker){
@@ -39,7 +40,9 @@ struct ReminderView: View {
             } else{
                 
             }
-          
+            Toggle(isOn: $onReapeat){
+                Text("Repeat Notification")
+            }
         }
     }
 }
