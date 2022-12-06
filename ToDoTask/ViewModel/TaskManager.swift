@@ -29,11 +29,11 @@ class TaskManager: ObservableObject{
     func loadTasks() {
       self.tasks = notificationManager.loadTasks()
     }
-    func addNewTask(_ taskName: String,_ status: String, _ reminder: Reminder?) {
+    func addNewTask(_ taskName: String,_ taskStatus: String, _ reminder: Reminder?) {
     if let reminder = reminder {
-        save(task: TaskModel(name: taskName, status: status, reminderEnabled: true, reminder: reminder))
+        save(task: TaskModel(name: taskName, status: taskStatus, reminderEnabled: true, reminder: reminder))
     } else {
-        save(task: TaskModel(name: taskName, status: status, reminderEnabled: false, reminder: Reminder()))
+        save(task: TaskModel(name: taskName, status: taskStatus, reminderEnabled: false, reminder: Reminder()))
     }
   }
     func removeData(at index: IndexSet) {
@@ -49,6 +49,13 @@ class TaskManager: ObservableObject{
       }
       if task.reminderEnabled {
         NotificationManager.shared.removeScheduledNotification(task: task)
+      }
+    }
+    func markTaskComplete(task: TaskModel) {
+      if let row = tasks.firstIndex(where: { $0.id == task.id }) {
+        var updatedTask = task
+        updatedTask.completed = true
+        tasks[row] = updatedTask
       }
     }
 }

@@ -65,7 +65,6 @@
 		ACBB56D4293F0E0400E6E9B9 /* ToDoTask */ = {
 			isa = PBXGroup;
 			children = (
-				ACBB56EE293F332F00E6E9B9 /* HandlerManager */,
 				ACBB56E5293F0E3D00E6E9B9 /* View */,
 				ACBB56E4293F0E3200E6E9B9 /* ViewModel */,
 				ACBB56E3293F0E2A00E6E9B9 /* Model */,
@@ -96,6 +95,8 @@
 		ACBB56E4293F0E3200E6E9B9 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				ACBB56EE293F332F00E6E9B9 /* HandlerManager */,
+				ACBB56F1293F3A1500E6E9B9 /* TaskManager.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -114,7 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				ACBB56EF293F335700E6E9B9 /* NotificationManager.swift */,
-				ACBB56F1293F3A1500E6E9B9 /* TaskManager.swift */,
 				ACBB56F3293F3AC500E6E9B9 /* TaskNotificationManager.swift */,
 			);
 			path = HandlerManager;
