@@ -8,5 +8,5 @@
 import Foundation
 
 class TaskManager: ObservableObject{
-    
+    static let shared = TaskManager()
 }
