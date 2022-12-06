@@ -17,6 +17,9 @@ struct CreateTask: View {
                         .font(.title)
                         .padding()
                     Spacer()
+                    Button("Save") {
+                        
+                    }
                 }
             }
         }
