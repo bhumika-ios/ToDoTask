@@ -33,7 +33,7 @@ struct CreateTask: View {
                             .padding()
                         Spacer()
                         Button("Save") {
-                            TaskManager.shared.addNewTask(taskName, taskStatus,makeReminder)
+                            TaskManager.shared.addNewTask(taskName, taskStatus,makeReminder())
                         }
                         .padding()
                     }
@@ -62,7 +62,7 @@ struct CreateTask: View {
       reminder.reminderType = selectedPicker
       switch selectedPicker {
       case .time:
-        reminder.timeInterval = TimeInterval(timeDuration[timeDuration] * 60)
+          reminder.timeInterval = TimeInterval(timeDurations[timeDuration] * 60)
       case .calendar:
         reminder.date = date
       }
