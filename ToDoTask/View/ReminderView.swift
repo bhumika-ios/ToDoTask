@@ -12,6 +12,8 @@ struct ReminderView: View {
     @Binding var selectedPicker: ReminderType
     // define timeduration object
     @Binding var timeDuration: Int
+    //define date object
+    @Binding var date: Date
     
     var body: some View {
         VStack{
@@ -31,7 +33,13 @@ struct ReminderView: View {
                         }
                     }
                 }
+            } else if selectedPicker == ReminderType.calender {
+                DatePicker("Enter Date", selection: $date)
+                    
+            } else{
+                
             }
+          
         }
     }
 }
