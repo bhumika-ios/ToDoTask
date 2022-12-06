@@ -29,10 +29,13 @@ struct CreateTask: View {
                 }
                 VStack{
                     TextField("Enter name of task", text: $taskName)
+                        .padding(.vertical)
                     TextField("Enter status of task", text: $taskStatus)
+                        .padding(.vertical)
                     Toggle(isOn: $reminderEnabled){
                         Text("Add Reminder")
                     }
+                    .padding(.vertical)
                 }
             }
         }
