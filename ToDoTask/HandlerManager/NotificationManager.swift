@@ -35,11 +35,11 @@ class NotificationManager: ObservableObject {
             }
         }
     }
-//    // remove notification
-//    func removeScheduledNotification(task: TaskModel) {
-//      UNUserNotificationCenter.current()
-//        .removePendingNotificationRequests(withIdentifiers: [task.id])
-//    }
+    // remove notification
+    func removeScheduledNotification(task: TaskModel) {
+      UNUserNotificationCenter.current()
+        .removePendingNotificationRequests(withIdentifiers: [task.id])
+    }
     //fetch data on create textfield
     func scheduleNotification(task: TaskModel) {
         let content = UNMutableNotificationContent()

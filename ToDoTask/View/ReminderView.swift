@@ -20,7 +20,7 @@ struct ReminderView: View {
         VStack{
             Picker("Notification Trigger", selection: $selectedPicker){
                 Text("Interval").tag(ReminderType.time)
-                Text("Date").tag(ReminderType.calender)
+                Text("Date").tag(ReminderType.calendar)
             }
             .pickerStyle(SegmentedPickerStyle())
             .padding(.vertical)
@@ -34,7 +34,7 @@ struct ReminderView: View {
                         }
                     }
                 }
-            } else if selectedPicker == ReminderType.calender {
+            } else if selectedPicker == ReminderType.calendar {
                 DatePicker("Enter Date", selection: $date)
                     
             } else{
