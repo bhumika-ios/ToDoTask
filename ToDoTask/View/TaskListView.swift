@@ -34,7 +34,9 @@ struct TaskListView: View {
                           .font(.title)
                           .accentColor(Color("Green"))
                       })
+                    .padding(.trailing)
                 }
+                .padding()
             }
         
         }
