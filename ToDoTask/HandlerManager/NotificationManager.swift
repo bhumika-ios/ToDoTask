@@ -12,3 +12,9 @@ enum NotificationManagerConstants {
     static let timeBaseNotification = "TimeBaseNotification"
     static let calendarBaseNotification = "CalendarBaseNotification"
 }
+
+class NotificationManager: ObservableObject {
+    static let shared = NotificationManager()
+    
+    
+}
