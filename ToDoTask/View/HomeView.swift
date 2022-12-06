@@ -40,6 +40,10 @@ struct HomeView: View {
             
         }
     }
+    //MARK: Animation method
+    private func addAnimation() {
+        
+    }
 }
 
 struct HomeView_Previews: PreviewProvider {
