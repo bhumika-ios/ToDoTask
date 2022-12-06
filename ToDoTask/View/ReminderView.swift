@@ -10,6 +10,8 @@ import SwiftUI
 struct ReminderView: View {
     //define picker objject
     @Binding var selectedPicker: ReminderType
+    // define timeduration object
+    @Binding var timeDuration: Int
     
     var body: some View {
         VStack{
@@ -19,6 +21,11 @@ struct ReminderView: View {
             }
             .pickerStyle(SegmentedPickerStyle())
             .padding(.vertical)
+            if selectedPicker == ReminderType.time{
+                Picker("TimeInerval", selection: $timeDuration){
+                    
+                }
+            }
         }
     }
 }
