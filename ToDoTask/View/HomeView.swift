@@ -34,7 +34,7 @@ struct HomeView: View {
                         .foregroundColor(.black)
                         .frame(height: 55)
                         .frame(maxWidth: .infinity)
-                        .background(green)
+                        .background(animate ? green : secondAccentColor)
                         .cornerRadius(10)
                 })
                 .padding(.horizontal, animate ? 30 : 50)
