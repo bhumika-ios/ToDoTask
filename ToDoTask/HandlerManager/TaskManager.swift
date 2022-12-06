@@ -10,5 +10,5 @@ import Foundation
 class TaskManager: ObservableObject{
     static let shared = TaskManager()
     
-    let notificationManager = Ta
+    let notificationManager = TaskNotificationManager()
 }
