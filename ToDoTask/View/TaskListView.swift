@@ -53,6 +53,7 @@ struct TaskListView: View {
                             }
                             .padding()
                         }
+                        AddTaskView()
                     }
                 }
             }
