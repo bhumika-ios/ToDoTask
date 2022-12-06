@@ -14,4 +14,10 @@ class TaskManager: ObservableObject{
     
     @Published var tasks: [TaskModel] = []
 
+    init(){
+        loadTasks()
+    }
+    func loadTasks() {
+      self.tasks = notificationManager.loadTasks()
+    }
 }
