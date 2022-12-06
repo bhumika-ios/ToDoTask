@@ -48,10 +48,16 @@ struct CreateTask: View {
                         .padding(.vertical)
                         if reminderEnabled{
                             ReminderView(selectedPicker: $selectedPicker, timeDuration: $timeDuration, date: $date, onReapeat: $onReapet)
+                                .navigationBarHidden(true)
+                                .navigationTitle("")
                             }
+                        Spacer()
                     }
+                    .padding()
                 }
             }
+            .navigationTitle("")
+            .navigationBarHidden(true)
         }
     }
     func makeReminder() -> Reminder? {
