@@ -49,7 +49,7 @@ struct HomeView: View {
                     .easeInOut(duration: 2.0)
                     .repeatForever()
             ){
-                
+                self.animate.toggle()
             }
         })
     }
