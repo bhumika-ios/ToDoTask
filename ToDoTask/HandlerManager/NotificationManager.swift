@@ -21,7 +21,7 @@ class NotificationManager: ObservableObject {
     func requestAuthorization(completion: @escaping (Bool) -> Void) {
         UNUserNotificationCenter.current()
             .requestAuthorization(options: [.alert, .sound, .badge]) { greanted, _ in
-                
+                self.fetchNotificationSettings()
                 completion(granted)
             }
     }
