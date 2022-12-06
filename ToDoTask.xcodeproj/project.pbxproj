@@ -18,6 +18,7 @@
 		ACBB56F0293F335700E6E9B9 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB56EF293F335700E6E9B9 /* NotificationManager.swift */; };
 		ACBB56F2293F3A1500E6E9B9 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB56F1293F3A1500E6E9B9 /* TaskManager.swift */; };
 		ACBB56F4293F3AC500E6E9B9 /* TaskNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB56F3293F3AC500E6E9B9 /* TaskNotificationManager.swift */; };
+		ACBB56F6293F445800E6E9B9 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB56F5293F445800E6E9B9 /* TaskListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		ACBB56EF293F335700E6E9B9 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		ACBB56F1293F3A1500E6E9B9 /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
 		ACBB56F3293F3AC500E6E9B9 /* TaskNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskNotificationManager.swift; sourceTree = "<group>"; };
+		ACBB56F5293F445800E6E9B9 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				ACBB56E6293F0F5100E6E9B9 /* HomeView.swift */,
 				ACBB56E8293F18E400E6E9B9 /* CreateTask.swift */,
 				ACBB56EA293F1CEB00E6E9B9 /* ReminderView.swift */,
+				ACBB56F5293F445800E6E9B9 /* TaskListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				ACBB56D8293F0E0400E6E9B9 /* ContentView.swift in Sources */,
 				ACBB56F0293F335700E6E9B9 /* NotificationManager.swift in Sources */,
 				ACBB56F4293F3AC500E6E9B9 /* TaskNotificationManager.swift in Sources */,
+				ACBB56F6293F445800E6E9B9 /* TaskListView.swift in Sources */,
 				ACBB56E9293F18E400E6E9B9 /* CreateTask.swift in Sources */,
 				ACBB56D6293F0E0400E6E9B9 /* ToDoTaskApp.swift in Sources */,
 			);
