@@ -24,6 +24,38 @@ struct TaskCell: View {
                         .frame(width: 20, height: 20)
                         .accentColor(task.completed ? .red : .green)
                 })
+                if task.completed {
+                    VStack(alignment: .leading){
+                        
+                        Text(task.name)
+                            .font(.system(size: 18))
+                            .strikethrough()
+                            .foregroundColor(.pink)
+                        
+                        Text(task.status)
+                            .font(.system(size: 14))
+                            .strikethrough()
+                            .foregroundColor(.pink)
+                            .padding(.vertical,-5)
+                    }
+                } else {
+                        HStack{
+                            VStack(alignment:.leading){
+                                Text(task.name)
+                                    .font(.system(size: 18))
+                                //.foregroundColor(.pink)
+                                
+                                Text(task.status)
+                                    .font(.system(size: 14))
+                                // .foregroundColor(.pink)
+                            }
+                            Spacer()
+                            Text(task.reminder.date ?? Date(), style: .date)
+                                .font(.system(size: 14))
+                            
+                        
+                    }
+                }
             }
         }
     }
