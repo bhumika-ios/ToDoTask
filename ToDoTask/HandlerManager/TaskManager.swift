@@ -11,4 +11,7 @@ class TaskManager: ObservableObject{
     static let shared = TaskManager()
     
     let notificationManager = TaskNotificationManager()
+    
+    @Published var tasks: [TaskModel] = []
+
 }
