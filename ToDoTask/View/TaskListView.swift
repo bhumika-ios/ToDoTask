@@ -40,8 +40,18 @@ struct TaskListView: View {
                 if notificationManager.tasks.isEmpty{
                     Spacer()
                     HomeView()
-                        .transaction(AnyTransition.opacity.animation(.easeIn))
+                        .transition(AnyTransition.opacity.animation(.easeIn))
                     Spacer()
+                } else{
+                    ZStack{
+                        VStack{
+                            List{
+                                ForEach(notificationManager.tasks) { task in
+                                    TaskCell(task: task)
+                                }
+                            }
+                        }
+                    }
                 }
             }
         
