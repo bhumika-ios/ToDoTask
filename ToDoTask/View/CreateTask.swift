@@ -20,6 +20,7 @@ struct CreateTask: View {
                     Button("Save") {
                         
                     }
+                    .padding()
                 }
             }
         }
