@@ -20,6 +20,7 @@
 		ACBB56F4293F3AC500E6E9B9 /* TaskNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB56F3293F3AC500E6E9B9 /* TaskNotificationManager.swift */; };
 		ACBB56F6293F445800E6E9B9 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB56F5293F445800E6E9B9 /* TaskListView.swift */; };
 		ACBB56F8293F466B00E6E9B9 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB56F7293F466B00E6E9B9 /* AddTaskView.swift */; };
+		ACBB56FA293F46D700E6E9B9 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB56F9293F46D700E6E9B9 /* TaskCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		ACBB56F3293F3AC500E6E9B9 /* TaskNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskNotificationManager.swift; sourceTree = "<group>"; };
 		ACBB56F5293F445800E6E9B9 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 		ACBB56F7293F466B00E6E9B9 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		ACBB56F9293F46D700E6E9B9 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				ACBB56EA293F1CEB00E6E9B9 /* ReminderView.swift */,
 				ACBB56F5293F445800E6E9B9 /* TaskListView.swift */,
 				ACBB56F7293F466B00E6E9B9 /* AddTaskView.swift */,
+				ACBB56F9293F46D700E6E9B9 /* TaskCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				ACBB56ED293F1E2100E6E9B9 /* TaskModel.swift in Sources */,
 				ACBB56E7293F0F5100E6E9B9 /* HomeView.swift in Sources */,
 				ACBB56F2293F3A1500E6E9B9 /* TaskManager.swift in Sources */,
+				ACBB56FA293F46D700E6E9B9 /* TaskCell.swift in Sources */,
 				ACBB56EB293F1CEB00E6E9B9 /* ReminderView.swift in Sources */,
 				ACBB56D8293F0E0400E6E9B9 /* ContentView.swift in Sources */,
 				ACBB56F0293F335700E6E9B9 /* NotificationManager.swift in Sources */,
