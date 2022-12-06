@@ -29,4 +29,11 @@ class TaskManager: ObservableObject{
     func loadTasks() {
       self.tasks = notificationManager.loadTasks()
     }
+    func addNewTask(_ taskName: String,_ status: String, _ reminder: Reminder?) {
+    if let reminder = reminder {
+        save(task: TaskModel(name: taskName, status: status, reminderEnabled: true, reminder: reminder))
+    } else {
+        save(task: TaskModel(name: taskName, status: status, reminderEnabled: false, reminder: Reminder()))
+    }
+  }
 }
