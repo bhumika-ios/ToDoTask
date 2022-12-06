@@ -36,4 +36,8 @@ class TaskManager: ObservableObject{
         save(task: TaskModel(name: taskName, status: status, reminderEnabled: false, reminder: Reminder()))
     }
   }
+    func removeData(at index: IndexSet) {
+        tasks.remove(atOffsets: index)
+        
+    }
 }
