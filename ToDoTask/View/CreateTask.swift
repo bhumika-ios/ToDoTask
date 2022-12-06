@@ -13,6 +13,11 @@ struct CreateTask: View {
     @State var taskStatus: String = ""
     //define boolean value for toggle field
     @State var reminderEnabled = false
+    //binding value define state value
+    @State var selectedPicker = ReminderType.time
+    @State var timeDuration: Int = 0
+    @State private var date = Date()
+    @State private var onReapet = false
     var body: some View {
         Form{
             Section{
@@ -36,7 +41,9 @@ struct CreateTask: View {
                         Text("Add Reminder")
                     }
                     .padding(.vertical)
-                    
+                    if reminderEnabled{
+                        ReminderView(selectedPicker: $selectedPicker, timeDuration: $timeDuration, date: $date, onReapeat: $onReapet)
+                    }
                 }
             }
         }
