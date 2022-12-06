@@ -34,6 +34,7 @@ struct HomeView: View {
                         .background(Color("Green"))
                         .cornerRadius(10)
                 })
+                .padding(.horizontal, animate ? 30 : 50)
             }
             .multilineTextAlignment(.center)
             .padding(40)
