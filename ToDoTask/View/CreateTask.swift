@@ -18,6 +18,8 @@ struct CreateTask: View {
     @State var timeDuration: Int = 0
     @State private var date = Date()
     @State private var onReapet = false
+    
+    @Environment(\.presentationMode) var presentationMode
     var body: some View {
         Form{
             Section{
