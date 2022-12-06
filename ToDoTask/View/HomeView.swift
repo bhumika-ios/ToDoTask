@@ -44,7 +44,13 @@ struct HomeView: View {
     private func addAnimation() {
         guard !animate else { return }
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
-            
+            withAnimation(
+                Animation
+                    .easeInOut(duration: 2.0)
+                    .repeatForever()
+            ){
+                
+            }
         })
     }
 }
