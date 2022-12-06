@@ -13,6 +13,18 @@ class TaskNotificationManager {
     }
     
     func save(tasks: [TaskModel]){
+        do{
+            let documentsDirectory = getDocumentsDirectory()
+            let storageURL = documentsDirectory.appendingPathComponent(FileConstants.tasksFileName)
+            let tasksData = try JSONEncoder().encode(tasks)
+            do {
+              try tasksData.write(to: storageURL)
+            } catch {
+              print("Couldn't write to File Storage")
+            }
+          } catch {
+            print("Couldn't encode tasks data")
+          }
         
     }
 }
