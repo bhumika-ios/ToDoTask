@@ -13,7 +13,7 @@ struct ToDoTaskApp: App {
    
     var body: some Scene {
         WindowGroup {
-          TaskListView()
+          LaunchView()
         }
     }
 }

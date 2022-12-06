@@ -22,6 +22,7 @@
 		ACBB56F8293F466B00E6E9B9 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB56F7293F466B00E6E9B9 /* AddTaskView.swift */; };
 		ACBB56FA293F46D700E6E9B9 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB56F9293F46D700E6E9B9 /* TaskCell.swift */; };
 		ACBB56FC293F508E00E6E9B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB56FB293F508E00E6E9B9 /* AppDelegate.swift */; };
+		ACBB56FE293F53F100E6E9B9 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBB56FD293F53F100E6E9B9 /* LaunchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		ACBB56F7293F466B00E6E9B9 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
 		ACBB56F9293F46D700E6E9B9 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		ACBB56FB293F508E00E6E9B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ACBB56FD293F53F100E6E9B9 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				ACBB56F5293F445800E6E9B9 /* TaskListView.swift */,
 				ACBB56F7293F466B00E6E9B9 /* AddTaskView.swift */,
 				ACBB56F9293F46D700E6E9B9 /* TaskCell.swift */,
+				ACBB56FD293F53F100E6E9B9 /* LaunchView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				ACBB56F8293F466B00E6E9B9 /* AddTaskView.swift in Sources */,
 				ACBB56ED293F1E2100E6E9B9 /* TaskModel.swift in Sources */,
 				ACBB56E7293F0F5100E6E9B9 /* HomeView.swift in Sources */,
+				ACBB56FE293F53F100E6E9B9 /* LaunchView.swift in Sources */,
 				ACBB56F2293F3A1500E6E9B9 /* TaskManager.swift in Sources */,
 				ACBB56FA293F46D700E6E9B9 /* TaskCell.swift in Sources */,
 				ACBB56EB293F1CEB00E6E9B9 /* ReminderView.swift in Sources */,
