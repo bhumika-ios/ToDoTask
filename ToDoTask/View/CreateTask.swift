@@ -11,6 +11,8 @@ struct CreateTask: View {
     // define textfield text name
     @State var taskName: String = ""
     @State var taskStatus: String = ""
+    //define boolean value for toggle field
+    @State var reminderEnabled = false
     var body: some View {
         Form{
             Section{
@@ -28,6 +30,9 @@ struct CreateTask: View {
                 VStack{
                     TextField("Enter name of task", text: $taskName)
                     TextField("Enter status of task", text: $taskStatus)
+                    Toggle(isOn: $reminderEnabled){
+                        Text("Add Reminder")
+                    }
                 }
             }
         }
