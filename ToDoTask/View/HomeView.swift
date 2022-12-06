@@ -42,7 +42,10 @@ struct HomeView: View {
     }
     //MARK: Animation method
     private func addAnimation() {
-        
+        guard !animate else { return }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5, execute: {
+            
+        })
     }
 }
 
