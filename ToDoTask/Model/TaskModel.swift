@@ -18,7 +18,7 @@ struct TaskModel: Identifiable, Codable{
 }
 enum ReminderType: Int, CaseIterable ,Identifiable, Codable{
     case time
-    case calender
+    case calendar
     var id: Int { self.rawValue}
 }
 struct Reminder: Codable {

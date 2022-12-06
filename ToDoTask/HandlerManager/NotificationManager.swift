@@ -49,6 +49,42 @@ class NotificationManager: ObservableObject {
       
         let taskData = try? JSONEncoder().encode(task)
         if let taskData = taskData {
-          content.userInfo = ["Task": taskData]
+            content.userInfo = ["Task": taskData]
+        }
+        //time related interval notification
+        var trigger: UNNotificationTrigger?
+        switch task.reminder.reminderType {
+        case .time:
+            if let timeInterval = task.reminder.timeInterval {
+                trigger = UNTimeIntervalNotificationTrigger(
+                    timeInterval: timeInterval,
+                    repeats: task.reminder.repeats)
+            }
+            content.threadIdentifier =
+              NotificationManagerConstants.timeBaseNotification
+            // calendar base notification
+        case .calendar:
+          if let date = task.reminder.date {
+            trigger = UNCalendarNotificationTrigger(
+              dateMatching: Calendar.current.dateComponents(
+                [.day, .month, .year, .hour, .minute],
+                from: date),
+              repeats: task.reminder.repeats)
+          }
+          content.threadIdentifier =
+            NotificationManagerConstants.calendarBaseNotification
+        }
+        if let trigger = trigger {
+          let request = UNNotificationRequest(
+            identifier: task.id,
+            content: content,
+            trigger: trigger)
+          // 5
+          UNUserNotificationCenter.current().add(request) { error in
+            if let error = error {
+              print(error)
+            }
+          }
+        }
     }
 }
