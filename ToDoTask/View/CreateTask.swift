@@ -20,35 +20,54 @@ struct CreateTask: View {
     @State private var onReapet = false
     
     @Environment(\.presentationMode) var presentationMode
+    let picker = ["Time", "Calendar"]
+    let timeDurations: [Int] = Array(1...59)
     var body: some View {
-        Form{
-            Section{
-                HStack{
-                    Spacer()
-                    Text("Add Task")
-                        .font(.title)
+        NavigationView{
+            Form{
+                Section{
+                    HStack{
+                        Spacer()
+                        Text("Add Task")
+                            .font(.title)
+                            .padding()
+                        Spacer()
+                        Button("Save") {
+                            TaskManager.shared.addNewTask(taskName, taskStatus,makeReminder)
+                        }
                         .padding()
-                    Spacer()
-                    Button("Save") {
-                        
                     }
-                    .padding()
-                }
-                VStack{
-                    TextField("Enter name of task", text: $taskName)
+                    VStack{
+                        TextField("Enter name of task", text: $taskName)
+                            .padding(.vertical)
+                        TextField("Enter status of task", text: $taskStatus)
+                            .padding(.vertical)
+                        Toggle(isOn: $reminderEnabled){
+                            Text("Add Reminder")
+                        }
                         .padding(.vertical)
-                    TextField("Enter status of task", text: $taskStatus)
-                        .padding(.vertical)
-                    Toggle(isOn: $reminderEnabled){
-                        Text("Add Reminder")
-                    }
-                    .padding(.vertical)
-                    if reminderEnabled{
-                        ReminderView(selectedPicker: $selectedPicker, timeDuration: $timeDuration, date: $date, onReapeat: $onReapet)
+                        if reminderEnabled{
+                            ReminderView(selectedPicker: $selectedPicker, timeDuration: $timeDuration, date: $date, onReapeat: $onReapet)
+                            }
                     }
                 }
             }
         }
+    }
+    func makeReminder() -> Reminder? {
+      guard reminderEnabled else {
+        return nil
+      }
+      var reminder = Reminder()
+      reminder.reminderType = selectedPicker
+      switch selectedPicker {
+      case .time:
+        reminder.timeInterval = TimeInterval(timeDuration[timeDuration] * 60)
+      case .calendar:
+        reminder.date = date
+      }
+      reminder.repeats = onReapet
+      return reminder
     }
 }
 
