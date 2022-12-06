@@ -36,6 +36,7 @@ struct CreateTask: View {
                         Text("Add Reminder")
                     }
                     .padding(.vertical)
+                    
                 }
             }
         }
