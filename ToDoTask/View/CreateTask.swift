@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct CreateTask: View {
+    // define textfield text name
+    @State var taskName: String = ""
+    @State var taskStatus: String = ""
     var body: some View {
         Form{
             Section{
@@ -21,6 +24,10 @@ struct CreateTask: View {
                         
                     }
                     .padding()
+                }
+                VStack{
+                    TextField("Enter name of task", text: $taskName)
+                    TextField("Enter status of task", text: $taskStatus)
                 }
             }
         }
