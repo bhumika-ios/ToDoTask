@@ -44,6 +44,7 @@ struct HomeView: View {
             }
             .multilineTextAlignment(.center)
             .padding(40)
+            .onAppear(perform: addAnimation)
             
         }
     }
