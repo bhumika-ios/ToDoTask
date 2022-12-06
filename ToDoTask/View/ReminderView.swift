@@ -23,7 +23,13 @@ struct ReminderView: View {
             .padding(.vertical)
             if selectedPicker == ReminderType.time{
                 Picker("TimeInerval", selection: $timeDuration){
-                    
+                    ForEach(1 ..< 59) { i in
+                        if i == 1 {
+                            Text("\(i) minute").tag(i)
+                        } else {
+                            Text("\(i) minutes").tag(i)
+                        }
+                    }
                 }
             }
         }
