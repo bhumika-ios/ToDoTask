@@ -51,6 +51,7 @@ struct TaskListView: View {
                                 }
                                 .onDelete(perform: notificationManager.removeData(at:))
                             }
+                            .padding()
                         }
                     }
                 }
