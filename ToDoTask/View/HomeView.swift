@@ -36,6 +36,7 @@ struct HomeView: View {
                 })
                 .padding(.horizontal, animate ? 30 : 50)
                 .scaleEffect(animate ? 1.1 : 1.0)
+                .offset(y: animate ? -10 : .zero)
             }
             .multilineTextAlignment(.center)
             .padding(40)
