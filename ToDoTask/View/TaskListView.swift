@@ -49,6 +49,7 @@ struct TaskListView: View {
                                 ForEach(notificationManager.tasks) { task in
                                     TaskCell(task: task)
                                 }
+                                .onDelete(perform: notificationManager.removeData(at:))
                             }
                         }
                     }
