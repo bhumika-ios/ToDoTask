@@ -33,6 +33,9 @@ struct HomeView: View {
                         .cornerRadius(10)
                 })
             }
+            .multilineTextAlignment(.center)
+            .padding(40)
+            
         }
     }
 }
