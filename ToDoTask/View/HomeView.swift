@@ -19,6 +19,18 @@ struct HomeView: View {
                     .font(.system(.headline))
                     .padding(.bottom, 20)
                     .foregroundColor(.gray)
+                
+                Button(
+                action: {
+                    
+                }, label: {
+                    Text("Add Something 🥳")
+                        .font(.system(.headline))
+                        .foregroundColor(.black)
+                        .frame(height: 55)
+                        .frame(maxWidth: .infinity)
+                        .background(Color("Green"))
+                })
             }
         }
     }
