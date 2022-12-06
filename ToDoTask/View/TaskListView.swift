@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TaskListView: View {
-    @ObservedObject var navigationManager = TaskManager.shared
+    @ObservedObject var notificationManager = TaskManager.shared
     @State var showNotification = false
 
     var body: some View {
@@ -37,6 +37,12 @@ struct TaskListView: View {
                     .padding(.trailing)
                 }
                 .padding()
+                if notificationManager.tasks.isEmpty{
+                    Spacer()
+                    HomeView()
+                        .transaction(AnyTransition.opacity.animation(.easeIn))
+                    Spacer()
+                }
             }
         
         }
