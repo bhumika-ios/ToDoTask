@@ -21,9 +21,8 @@ struct TaskListView: View {
                     Spacer()
                     Button(
                       action: {
-                        // 1
                         NotificationManager.shared.requestAuthorization { granted in
-                          // 2
+                   
                           if granted {
                             showNotification = true
                           }

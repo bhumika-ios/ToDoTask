@@ -35,6 +35,7 @@ struct CreateTask: View {
                         Button("Save") {
                             TaskManager.shared.addNewTask(taskName, taskStatus,makeReminder())
                         }
+                        .disabled(taskName.isEmpty ? true : false)
                         .padding()
                     }
                     VStack{
