@@ -18,7 +18,7 @@ struct CreateTask: View {
     @State var timeDuration: Int = 0
     @State private var date = Date()
     @State private var onReapet = false
-    
+    // dismiss for used define value
     @Environment(\.presentationMode) var presentationMode
     let picker = ["Time", "Calendar"]
     let timeDurations: [Int] = Array(1...59)
@@ -33,9 +33,12 @@ struct CreateTask: View {
                             .padding()
                         Spacer()
                         Button("Save") {
+                            //save task
                             TaskManager.shared.addNewTask(taskName, taskStatus,makeReminder())
+                            //close create task
                             presentationMode.wrappedValue.dismiss()
                         }
+                        //hide save button input given then aply
                         .disabled(taskName.isEmpty ? true : false)
                         .padding()
                     }
