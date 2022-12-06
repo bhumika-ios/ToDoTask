@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeView: View {
     //MARK: animation define
     @State private var animate: Bool = false
+    @State var showCreateTaskView = false
     //color define
     private let green = Color("Green")
     private let secondAccentColor = Color("SecondColor")
@@ -27,7 +28,7 @@ struct HomeView: View {
                 
                 Button(
                 action: {
-                    
+                    showCreateTaskView = true
                 }, label: {
                     Text("Add Something 🥳")
                         .font(.system(.headline))
@@ -45,8 +46,11 @@ struct HomeView: View {
             .multilineTextAlignment(.center)
             .padding(40)
             .onAppear(perform: addAnimation)
+                .sheet(isPresented: $showCreateTaskView) {
+                    CreateTask()
+                }
             
-        }
+            }
     }
     //MARK: Animation method
     private func addAnimation() {
