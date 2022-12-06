@@ -30,6 +30,7 @@ struct HomeView: View {
                         .frame(height: 55)
                         .frame(maxWidth: .infinity)
                         .background(Color("Green"))
+                        .cornerRadius(10)
                 })
             }
         }
