@@ -19,6 +19,21 @@ struct TaskListView: View {
                     Text("Todo Task 📝")
                       .font(.title)
                     Spacer()
+                    Button(
+                      action: {
+                        // 1
+                        NotificationManager.shared.requestAuthorization { granted in
+                          // 2
+                          if granted {
+                            showNotification = true
+                          }
+                        }
+                      },
+                      label: {
+                        Image(systemName: "bell")
+                          .font(.title)
+                          .accentColor(Color("Green"))
+                      })
                 }
             }
         
