@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
+    //MARK: animation define
+    @State private var animate: Bool = false
     var body: some View {
         ScrollView{
             VStack{
