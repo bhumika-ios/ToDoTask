@@ -34,6 +34,7 @@ struct CreateTask: View {
                         Spacer()
                         Button("Save") {
                             TaskManager.shared.addNewTask(taskName, taskStatus,makeReminder())
+                            presentationMode.wrappedValue.dismiss()
                         }
                         .disabled(taskName.isEmpty ? true : false)
                         .padding()
